@@ -1,0 +1,23 @@
+/* Previne zoom automático em inputs no mobile */
+@supports (-webkit-overflow-scrolling: touch) {
+    input, textarea, select {
+      font-size: 16px !important;
+    }
+  }
+  
+  /* Garante que inputs tenham tamanho adequado para toque */
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    min-height: 44px !important;
+  }
+  
+  /* Remove transformações que podem afetar o zoom */
+  input:focus {
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+  }

@@ -48,7 +48,7 @@ const App = () => {
     if (city === "") {
       setOpen(true);
       setTextError("Digite alguma cidade.");
-      setBackgroundUrl (`/public/img/earth.jpg`);
+      setBackgroundUrl(`/public/img/earth.jpg`);
       return;
     }
 
@@ -58,9 +58,9 @@ const App = () => {
 
     setIsLoading(false);
     if (!data || data.cod === "404") {
-       setOpen(true);
+      setOpen(true);
       setTextError("Cidade não encontrada!");
-      setBackgroundUrl (`/img/earth.jpg`);
+      setBackgroundUrl(`/img/earth.jpg`);
       return;
     }
 
