@@ -60,7 +60,7 @@ const App = () => {
     if (!data || data.cod === "404") {
        setOpen(true);
       setTextError("Cidade não encontrada!");
-      setBackgroundUrl (`/public/img/earth.jpg`);
+      setBackgroundUrl (`/img/earth.jpg`);
       return;
     }
 
