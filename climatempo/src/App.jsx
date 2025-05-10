@@ -106,9 +106,11 @@ const App = () => {
           transition: "background-image 0.5s ease-in-out",
         }}
       >
-        <div className="w-full max-w-md bg-gray-300 bg-opacity-50 rounded-2xl p-6 shadow-lg"
+        <div className="w-full max-w-96 bg-gray-300 bg-opacity-50 rounded-2xl p-6 shadow-lg"
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.8)' // Branco com 70% de opacidade
+            backgroundColor: 'rgba(255, 255, 255, 0.8)', // Branco com 70% de opacidade
+            width: '70%', // Limita mais a largura no mobile
+            margin: '1rem' // Adiciona margem nas laterais
           }}>
           <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
             Confira o clima de uma cidade:
